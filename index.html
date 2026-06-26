@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+
+<audio src="https://www.dropbox.com/scl/fi/dnzsq2c9291w3ghudn9bf/Cadmium-Melody-ft.-Jon-Becker-Lyrics-Video-BipolarBear.mp3?rlkey=4h59kfsf7bfjfnw5l5n4sihpl&st=g5qji44m&dl=1"></audio>
+
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+<meta http-equiv="refresh" content="30">
+
+
+<style>
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+font-family: sans-serif;
+}
+
+
+main{
+display: flex;
+align-items: center;
+justify-content: center;
+min-height:100vh;
+flex-direction:column;
+background-color: #fffdd0;
+}
+
+.rel{
+position:relative;
+}
+
+.wish{
+font-family: Sofia;
+font-size: 2em;
+font-weight: bold;
+color: transparent;
+background-image: url("https://i.imgur.com/xXKBwVD.gif");
+background-size:contain;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: beat 2s ease-in-out infinite;
+}
+
+@keyframes beat{
+0, 100%{
+scale: 1;
+}
+
+50%{
+scale: 1.1;
+}
+}
+
+.flame{
+width: 20px;
+height: 40px;
+background-image: radial-gradient(white, orange, yellow, white);
+box-shadow: 0 0 10px yellow;
+border-radius: 50%;
+animation: glow 3s linear infinite;
+position: absolute;
+top: -2%;;
+left: 50%;
+transform-origin: 50% 100%;
+}
+
+.candle{
+content:'';
+width: 10px;
+height: 30px;
+background: #03bbff;
+position: absolute;
+left: calc(50% - 5px);
+top: 8%;
+background: repeating-linear-gradient(
+  45deg,
+#03bbff,
+white 10px,
+#03bbff 10px,
+#5500ff 20px
+);
+}
+
+@keyframes glow{
+0%, 100%{
+transform: rotate(-10deg) scale(1) translateX(-10px);
+}
+
+50%{
+transform: rotate(10deg) scale(1.1) translateX(-10px);
+box-shadow: 0 0 30px yellow;
+}
+}
+
+
+
+
+
+
+.confetti {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.confetti-piece {
+  position: absolute;
+  width: 8px;
+  height: 16px;
+  background: #ffd300;
+  top: 0;
+  opacity: 0;
+}
+.confetti-piece:nth-child(1) {
+  left: 7%;
+  transform: rotate(38deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+          animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 336ms;
+          animation-delay: 336ms;
+  -webkit-animation-duration: 959ms;
+          animation-duration: 959ms;
+}
+.confetti-piece:nth-child(2) {
+  left: 14%;
+  transform: rotate(-11deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+          animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 174ms;
+          animation-delay: 174ms;
+  -webkit-animation-duration: 762ms;
+          animation-duration: 762ms;
+}
+.confetti-piece:nth-child(3) {
+  left: 21%;
+  transform: rotate(0deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+          animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 32ms;
+          animation-delay: 32ms;
+  -webkit-animation-duration: 932ms;
+          animation-duration: 932ms;
+}
+.confetti-piece:nth-child(4) {
+  left: 28%;
+  transform: rotate(-21deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+          animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 210ms;
+          animation-delay: 210ms;
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+}
+.confetti-piece:nth-child(5) {
+  left: 35%;
+  transform: rotate(5deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+          animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+  -webkit-animation-duration: 884ms;
+          animation-duration: 884ms;
+}
+.confetti-piece:nth-child(6) {
+  left: 42%;
+  transform: rotate(4deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+          animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 30ms;
+          animation-delay: 30ms;
+  -webkit-animation-duration: 827ms;
+          animation-duration: 827ms;
+}
+.confetti-piece:nth-child(7) {
+  left: 49%;
+  transform: rotate(-45deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+          animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 352ms;
+          animation-delay: 352ms;
+  -webkit-animation-duration: 1094ms;
+          animation-duration: 1094ms;
+}
+.confetti-piece:nth-child(8) {
+  left: 56%;
+  transform: rotate(66deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+          animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 136ms;
+          animation-delay: 136ms;
+  -webkit-animation-duration: 721ms;
+          animation-duration: 721ms;
+}
+.confetti-piece:nth-child(9) {
+  left: 63%;
+  transform: rotate(-70deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+          animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 285ms;
+          animation-delay: 285ms;
+  -webkit-animation-duration: 931ms;
+          animation-duration: 931ms;
+}
+.confetti-piece:nth-child(10) {
+  left: 70%;
+  transform: rotate(-72deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+          animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 209ms;
+          animation-delay: 209ms;
+  -webkit-animation-duration: 709ms;
+          animation-duration: 709ms;
+}
+.confetti-piece:nth-child(11) {
+  left: 77%;
+  transform: rotate(-29deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+          animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 63ms;
+          animation-delay: 63ms;
+  -webkit-animation-duration: 864ms;
+          animation-duration: 864ms;
+}
+.confetti-piece:nth-child(12) {
+  left: 84%;
+  transform: rotate(-55deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+          animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 469ms;
+          animation-delay: 469ms;
+  -webkit-animation-duration: 879ms;
+          animation-duration: 879ms;
+}
+.confetti-piece:nth-child(13) {
+  left: 91%;
+  transform: rotate(40deg);
+  -webkit-animation: makeItRain 1000ms infinite ease-out;
+          animation: makeItRain 1000ms infinite ease-out;
+  -webkit-animation-delay: 3ms;
+          animation-delay: 3ms;
+  -webkit-animation-duration: 1025ms;
+          animation-duration: 1025ms;
+}
+.confetti-piece:nth-child(odd) {
+  background: #17d3ff;
+}
+.confetti-piece:nth-child(even) {
+  z-index: 1;
+}
+.confetti-piece:nth-child(4n) {
+  width: 5px;
+  height: 12px;
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
+}
+.confetti-piece:nth-child(3n) {
+  width: 3px;
+  height: 10px;
+  -webkit-animation-duration: 2500ms;
+          animation-duration: 2500ms;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+.confetti-piece:nth-child(4n-7) {
+  background: #ff4e91;
+}
+
+@-webkit-keyframes makeItRain {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    transform: translateY(200px);
+  }
+}
+
+@keyframes makeItRain {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    transform: translateY(200px);
+  }
+}
+
+
+.fix{
+position: fixed;
+top:0;
+z-index: 2;
+width:100%;
+height:100%;
+}
+
+
+.gifty{
+width: 100px;
+height: 100px;
+position: absolute ;
+
+animation: fall 3s linear forwards,
+bounce 0.3s linear forwards,
+fluff 1s ease-in infinite;
+animation-delay: 1s, 4s, 5s;
+
+top: -200px;
+z-index: 4;
+}
+
+@keyframes bounce{
+0%{transform: scaleY(1.1); }
+
+60%{transform: scaleY(0.7); }
+
+100%{transform: scaleY(1);}
+}
+
+@keyframes fall{
+0%{top: -200px;}
+
+100%{top: 80vh;}
+}
+
+@keyframes fluff{
+0%{
+	transform: scale(0.8);
+}
+
+30%{
+	transform: scale(1.1);
+}
+
+100%{
+	transform: scale(0.8);
+}
+}
+
+.teddy{
+bottom: 0;
+position: absolute;
+transform: scale(0);
+}
+
+.teddy-anim{
+animation: expand 0.8s linear forwards;
+animation-delay: 1s;
+}
+
+@keyframes expand
+{
+0%{
+transform: scale(0);
+}
+
+40%{
+transform: scale(1.2);
+}
+
+100%{
+transform: scale(1);
+}
+}
+
+.message{
+position: absolute;
+top: 55%;
+width: 120px;
+left: calc(50% - 60px);
+padding: 10px;
+font-family: Sofia;
+font-weight: bold;
+color: white;
+text-shadow: 0 0 4px hotpink;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<main>
+
+
+<div class="wish">
+Happy birthday Aaku
+</div>
+
+<br>
+<br>
+<div class="rel">
+<div class="candle"></div>
+<div class="flame">
+</div>
+<img src="https://i.imgur.com/t759Hyt.png" style="width:100%;"/>
+</div>
+
+
+<div class="gifty" >
+<img style="width:100%" src="https://i.imgur.com/aGcaI5Y.png" />
+</div>
+
+<div class="teddy">
+<img style="width:100%;" src="https://i.imgur.com/7AeYGFX.png">
+<div class="message">
+
+</div>
+</div>
+
+</main>
+
+<div class ="fix">
+<div class="confetti">
+  <div class="confetti-piece"></div>
+  <div class="confetti-piece"></div>
+  <div class="confetti-piece"></div>
+  <div class="confetti-piece"></div>
+  <div class="confetti-piece"></div>
+  <div class="confetti-piece"></div>
+  <div class="confetti-piece"></div>
+  <div class="confetti-piece"></div>
+  <div class="confetti-piece"></div>
+  <div class="confetti-piece"></div>
+  <div class="confetti-piece"></div>
+  <div class="confetti-piece"></div>
+  <div class="confetti-piece"></div>
+</div>
+</div>
+
+<script type="text/javascript">
+
+function showgift(){
+console.log("hello");
+animatetext();
+document.querySelector(".teddy").classList.add("teddy-anim");
+}
+
+window.onload = ()=> {
+
+let play = false;
+window.onclick = ()=> {
+	if (!play){
+	document.querySelector("audio").play()
+	play= true;
+	}
+}
+
+
+console.log("hi");
+document.querySelector(".gifty").onclick = showgift;
+}
+
+
+let messages = [
+"happy bdday meyi boobooo 😚😘🤗🤗     ",
+"i miss you every single day 🤗😭🤗     ",
+"after you gone, my happiness has disappeared      ",
+"without you i have very less reasons to live..     ",
+"i will wait for u forever     ",
+"i love u so much 😚😘 boobooo     ",
+"mr jauga tumhare bina     ",
+"plz vapas ajao boobooo 🤗     "
+];
+
+let messagediv = document.querySelector(".message");
+
+let mi = 0;
+let mic = 0;
+function animatetext(){
+
+let m = messages[mi];
+
+if(mic == m.length)
+{
+	mi = (mi + 1)% messages.length;
+	m = messages[mi];
+	mic =0;
+	messagediv.innerHTML ="";
+}
+
+let c = m[mic];
+console.log("c: ", c);
+let currtext = ""+ messagediv.innerHTML;
+let newtext = currtext + c;
+
+messagediv.innerHTML = newtext;
+mic ++;
+setTimeout(animatetext, 100);
+}
+
+
+</script>
+</body>
+</html>
