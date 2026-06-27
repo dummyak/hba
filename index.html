@@ -6,7 +6,7 @@
 <audio src="https://www.dropbox.com/scl/fi/dnzsq2c9291w3ghudn9bf/Cadmium-Melody-ft.-Jon-Becker-Lyrics-Video-BipolarBear.mp3?rlkey=4h59kfsf7bfjfnw5l5n4sihpl&st=g5qji44m&dl=1"></audio>
 
 <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-	
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -374,6 +374,45 @@ transform: scale(1);
 }
 }
 
+.eyeclose{
+	position: absolute;
+	top:27%;
+	left: 53.5%;
+	width:53%;
+	transform: translateX(-50%);
+	animation: blink 2s linear infinite;
+	opacity:0;
+}
+
+@keyframes blink{
+0%{
+opacity:0;
+}
+
+40%{
+opacìty:1;
+}
+
+50%{
+opacity:0;
+}
+
+60%{
+opacity: 0;
+}
+
+70%{
+opacity: 1;
+}
+
+80%{
+opacity: 0;
+}
+
+
+
+}
+
 .message{
 position: absolute;
 top: 55%;
@@ -383,8 +422,14 @@ padding: 10px;
 font-family: Sofia;
 font-weight: bold;
 color: white;
-text-shadow: 0 0 4px hotpink;
+text-shadow: 0 0 10px white;
+/*-webkit-text-stroke: 0.001px hotpink;*/
 }
+
+.rel{
+	position:relative;
+}
+
 
 </style>
 </head>
@@ -414,7 +459,10 @@ Happy birthday Aaku
 </div>
 
 <div class="teddy">
-<img style="width:100%;" src="https://i.imgur.com/7AeYGFX.png">
+<div class="rel">
+	<img style="width:100%;" src="https://i.imgur.com/7AeYGFX.png" />
+	<img class="eyeclose" src="eyeclose2.jpg" />
+</div>
 <div class="message">
 
 </div>
